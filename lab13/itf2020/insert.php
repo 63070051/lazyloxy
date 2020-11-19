@@ -8,7 +8,6 @@
     header("location: index.php");
   }
   else{
-    echo "<script>alert(\"เพิ่มข้อมูลไม่สำเร็จ\")</script>";
-    header("location: index.php");
+    echo "<script>alert(\"เพิ่มข้อมูลไม่สำเร็จ\");</script> <script>window.location.replace(\"index.php\");</script>";
   }
 ?>
