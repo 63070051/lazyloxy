@@ -1,3 +1,7 @@
+<?php
+    $con = mysqli_connect('itf63070051.mysql.database.azure.com', 'kmitl63070051@itf63070051', 'dH4nxosrgh', 'itf63070051') or die("Error");
+    $query = mysqli_query($con, "select * from guestbook");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,16 +34,17 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>fang</td>
-                                    <td>comment-1</td>
-                                    <td>google.com</td>
-                                </tr>
-                                <tr>
-                                    <td>fang1</td>
-                                    <td>comment-2</td>
-                                    <td>google.com</td>
-                                </tr>
+                                <?php
+                                while ($fetch = mysqli_fetch_array($query)) {
+                                ?>
+                                    <tr>
+                                        <td><?php echo $fecth["name"]; ?></td>
+                                        <td><?php echo $fecth["comment"];?></td>
+                                        <td><?php echo $fecth["link"]; ?></td>
+                                    </tr>
+                                <?php
+                                }
+                                ?>
                             </tbody>
                         </table>
                     </div>

@@ -5,10 +5,10 @@
   $link = $_POST["link"];
   $query = mysqli_query($con, "insert into guestbook (name, comment, link) value (".$name.",".$comment.", ".$link.")");
   if($query){
-    header("location: index.html");
+    header("location: index.php");
   }
   else{
     echo "<script>alert("เพิ่มข้อมูลไม่สำเร็จ")</script>";
-    header("location: index.html");
+    header("location: index.php");
   }
 ?>
