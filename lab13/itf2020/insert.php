@@ -3,7 +3,7 @@
   $name = $_POST["name"];
   $comment = $_POST["comment"];
   $link = $_POST["link"];
-  $query = mysqli_query($con, "insert into guestbook (name, comment, link) value (".$name.",".$comment.", ".$link.")");
+  $query = mysqli_query($con, "insert into guestbook (name, comment, link) value ('".$name."', '".$comment."', '".$link."')");
   if($query){
     header("location: index.php");
   }
