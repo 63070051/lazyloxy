@@ -3,7 +3,7 @@
   $id = $_GET["user"];
   $query = mysqli_query($con, "delete from guestbook where id = ".$id."");
   if($query){
-    header("location: index.php");
+    echo "<script>alert(\"ลบข้อมูลสำเร็จ\");</script> <script>window.location.replace(\"index.php\");</script>";
   }
   else{
     echo "<script>alert(\"ลบข้อมูลไม่สำเร็จ\");</script> <script>window.location.replace(\"index.php\");</script>";
