@@ -27,7 +27,7 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['name'];?></div></td>
     <td><?php echo $Result['comment'];?></td>
     <td><?php echo $Result['link'];?></td>
-    <td><a href="edit.php?user=<?php echo $Result['id'];?>" class = "btn btn-primary">edit</a></td>
+    <td><a href="edit.php?user=<?php echo $Result['id'];?>" class = "btn btn-primary">edit</a> <a href="delete.php?user=<?php echo $Result['id'];?>" class = "btn btn-primary">edit</a></td>
   </tr>
 <?php
 }
