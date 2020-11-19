@@ -1,0 +1,14 @@
+<?php
+  $con = mysqli_connect('itf63070051.mysql.database.azure.com', 'kmitl63070051@itf63070051', 'dH4nxosrgh', 'itf63070051') or die("Error");
+  $name = $_POST["name"];
+  $comment = $_POST["comment"];
+  $link = $_POST["link"];
+  $query = mysqli_query($con, "insert into guestbook (name, comment, link) value (".$name.",".$comment.", ".$link.")");
+  if($query){
+    header("location: index.html");
+  }
+  else{
+    echo "<script>alert("เพิ่มข้อมูลไม่สำเร็จ")</script>";
+    header("location: index.html");
+  }
+?>
