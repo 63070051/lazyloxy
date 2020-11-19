@@ -6,6 +6,6 @@
     header("location: index.php");
   }
   else{
-    echo "<script>alert(\"ลบข้อมูลไม่สำเร็จ\");</script> <script>window.location.replace(\"index.php\");</script>";
+    echo "<script>alert(\"ลบข้อมูลไม่สำเร็จ: ".mysqli_error($conn)."\");</script> <script>window.location.replace(\"index.php\");</script>";
   }
 ?>
