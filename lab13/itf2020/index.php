@@ -42,7 +42,10 @@
                                         <td><?php echo $fetch["name"]; ?></td>
                                         <td><?php echo $fetch["comment"];?></td>
                                         <td><?php echo $fetch["link"]; ?></td>
-                                        <td><a class="btn btn-danger" href="delete.php?user=<?php echo $fetch["id"]; ?>">delete</a></td>
+                                        <td>
+                                            <a class="btn btn-danger" href="delete.php?user=<?php echo $fetch["id"]; ?>">delete</a> 
+                                            <a class="btn btn-info" href="edit.php?user=<?php echo $fetch["id"]; ?>">edit</a>
+                                        </td>
                                     </tr>
                                 <?php
                                 }
