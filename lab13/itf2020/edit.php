@@ -24,7 +24,7 @@
       </div>
     <div class="container">
         <div class="row mt-5">
-            <div class="col-lg-6 offset-lg-3">
+            <div class="col-lg-6 offset-lg-3 mb-4">
                 <div class="card shadow h-100">
                     <div class="card-body">
                         <form action="update.php" method="POST">

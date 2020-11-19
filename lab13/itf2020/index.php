@@ -22,7 +22,7 @@
       </div>
     <div class="container">
         <div class="row mt-5">
-            <div class="col-lg-6">
+            <div class="col-lg-6 mb-4">
                 <div class="card shadow h-100">
                     <div class="card-body">
                         <table class="table">
@@ -55,7 +55,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 mb-4">
                 <div class="card shadow h-100">
                     <div class="card-body">
                 <form action="insert.php" method="POST">
