@@ -31,6 +31,7 @@
                                     <th>name</th>
                                     <th>comment</th>
                                     <th>link</th>
+                                    <th>action</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -41,6 +42,7 @@
                                         <td><?php echo $fetch["name"]; ?></td>
                                         <td><?php echo $fetch["comment"];?></td>
                                         <td><?php echo $fetch["link"]; ?></td>
+                                        <td><a class="btn btn-danger" href="delete.php?user=<?php echo $fetch["id"]; ?>">delete</a></td>
                                     </tr>
                                 <?php
                                 }
