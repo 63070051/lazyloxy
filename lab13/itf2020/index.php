@@ -38,9 +38,9 @@
                                 while ($fetch = mysqli_fetch_array($query)) {
                                 ?>
                                     <tr>
-                                        <td><?php echo $fecth["name"]; ?></td>
-                                        <td><?php echo $fecth["comment"];?></td>
-                                        <td><?php echo $fecth["link"]; ?></td>
+                                        <td><?php echo $fetch["name"]; ?></td>
+                                        <td><?php echo $fetch["comment"];?></td>
+                                        <td><?php echo $fetch["link"]; ?></td>
                                     </tr>
                                 <?php
                                 }

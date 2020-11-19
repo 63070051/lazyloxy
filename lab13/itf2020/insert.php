@@ -8,7 +8,7 @@
     header("location: index.php");
   }
   else{
-    echo "<script>alert("เพิ่มข้อมูลไม่สำเร็จ")</script>";
+    echo "<script>alert(\"เพิ่มข้อมูลไม่สำเร็จ\")</script>";
     header("location: index.php");
   }
 ?>
